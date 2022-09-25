@@ -5,7 +5,7 @@ Fonts are separated by a & DONE */
 @import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Kanit:ital@1&display=swap');
 
 :root {
-  /* DONE change the values below to your colors from your palette DONE */
+  /* DONE change the values below to your colors from your palette */
   --primary-color: #004cff   ;
   --secondary-color: #008cff ;
   --accent1-color: #00ccff;
