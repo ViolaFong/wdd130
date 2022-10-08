@@ -42,22 +42,22 @@ header {
     color: #00ccff;
 }
 .book {
-    background-color: #004cff;
+    background-color: #003d2b;
     color: #00ccff;
     text-decoration: none;
 }
 .book:hover {
-    background-color: #003d2b;
-    color: #00ccff;
+    background-color: white;
+    color: #003d2b;
 }
 .join {
-    background-color: #004cff;
+    background-color: #003d2b;
     color: #00ccff;
     text-decoration: none;
 }
 .join:hover {
-    background-color: #003d2b;
-    color: #00ccff;
+    background-color: white;
+    color: #003d2b;
 }
 .button-box {
     text-align: center;
@@ -70,7 +70,7 @@ main section {
     background-color: #003d2b;
 }
 .msg {
-    background-color: #004cff;
+    background-color: #008cff;
 }
 .msg h2 {
     color: white;
@@ -79,7 +79,7 @@ main section {
     color: #00ccff;
 }
 footer {
-    background-color: #004cff;
+    background-color: #008cff;
     color: #00ccff;
 }
 footer a {
