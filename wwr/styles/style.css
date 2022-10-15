@@ -1,12 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Kanit:ital@0;1&display=swap');
 #content {
     max-width: 1600px;
     margin: 0 auto;
+    font-family: Kanit, Helvetica, sans-serif;
+    font-size: 22px;
 }
 .logo {
     width: 80px;
 }
+#logo_link {
+    padding-top: 5px;
+}
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 nav {
     background-color: #003d2b;
@@ -14,9 +21,10 @@ nav {
 }
 nav a {
     text-align: center;
-    background-color: #003d2b;
+    /* background-color: #003d2b; */
     color: white;
     text-decoration: none;
+    padding: 35px;
 }
 a:hover {
     background-color: #003d2b;
@@ -25,6 +33,9 @@ a:hover {
 body {
     background-color: #004cff;
     color: #00ccff;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 header {
     background-color: #004cff;
@@ -36,28 +47,25 @@ header {
 #hero-msg h1 {
     text-align: center;
     color: white;
+    font-family: "Akaya Kanadaka", Helvetica, sans-serif;
+    font-size: 2em;
 }
 #hero-msg h4 {
     text-align: center;
     color: #00ccff;
 }
-.book {
+.book, .join {
     background-color: #003d2b;
     color: #00ccff;
     text-decoration: none;
+    font-size: 18px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
-.book:hover {
+.book:hover, .join:hover {
     background-color: white;
     color: #003d2b;
-}
-.join {
-    background-color: #003d2b;
-    color: #00ccff;
-    text-decoration: none;
-}
-.join:hover {
-    background-color: white;
-    color: #003d2b;
+    padding: 15px 30px;
 }
 .button-box {
     text-align: center;
@@ -65,22 +73,45 @@ header {
 main section {
     text-align: center;
 }
+main section img {
+    box-sizing: border-box;
+}
 #background {
     height: 725px;
     background-color: #003d2b;
 }
 .msg {
     background-color: #008cff;
+    line-height: 1.5em;
+    padding: 35px;
+}
+.card-img {
+    border: 10px solid #003d2b
+}
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+h2 {
+    margin: 0;
+}
+.home-title {
+    margin-top: 10px;
 }
 .msg h2 {
     color: white;
+    font-family: "Akaya Kanadaka", Helvetica, sans-serif;
+    font-size: 2em;
 }
 .msg p {
     color: #00ccff;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 footer {
     background-color: #008cff;
     color: #00ccff;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 footer a {
     color: #00ccff;
@@ -94,4 +125,7 @@ footer p {
 }
 footer p a:hover {
     text-decoration: underline;
+}
+footer .social img {
+    padding-top: 15px;
 }
