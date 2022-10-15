@@ -38,7 +38,7 @@ body {
     padding: 0;
 }
 header {
-    background-color: #004cff;
+    background-color: #003d2b;
     color: #00ccff;
 }
 #hero-img {
@@ -61,11 +61,11 @@ header {
     font-size: 18px;
     margin-top: 50px;
     border-radius: 5px;
+    padding: 15px 30px;
 }
 .book:hover, .join:hover {
     background-color: white;
     color: #003d2b;
-    padding: 15px 30px;
 }
 .button-box {
     text-align: center;
