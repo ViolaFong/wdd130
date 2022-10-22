@@ -106,6 +106,7 @@
 .content4 {
   /* This is the parent of the activity 4 boxes. */
   height: 400px;
+  width: 800px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
