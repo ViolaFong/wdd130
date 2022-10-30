@@ -8,11 +8,7 @@ Fonts are separated by a | */
   --primary-color: #9928C2;
   --secondary-color: #1E0094;
   --accent1-color: #93EE1D;
-  --accent2-color: #5BC2EE;
-  --accent3-color: #9928C2;
-  --accent2-color: black;
-  --accent3-color: white;
-
+  --accent2-color: #5BC2EE;  
 
   /* change the values below to your chosen font(s) */
   --heading-font: Spectral, "DM Serif Display" serif;
