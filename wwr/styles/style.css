@@ -175,7 +175,6 @@ h2 {
     padding: 0;
 }
 #river-title {
-    grid-column: 1/6;
     text-align: center;
     color: white;
     font-family: "Akaya Kanadaka", Helvetica, sans-serif;
