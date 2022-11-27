@@ -1,0 +1,183 @@
+/*   Import the fonts   */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Mukta&family=Rubik&family=Spectral:wght@600&display=swap');
+
+
+/* Root rules to apply to all aspects of the CSS */
+:root {
+
+    --primary-color: #9928C2;
+    --secondary-color: #1E0094;
+    --accent1-color: #93EE1D;
+    --accent2-color: #5BC2EE;  
+
+
+    /* change the values below to your chosen font(s) */
+    --heading-font: Spectral, "DM Serif Display", serif;
+    --paragraph-font: Rubik, Mukta, Sans-serif;
+
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: #93EE1D;  /* headlines on a white background */ 
+    --headline-color-on-color: #1E0094; /* headlines on a colored background */ 
+    --paragraph-color-on-white: black; /* paragraph text on a white background */ 
+    --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
+    --paragraph-background-color: #9928C2;
+    --nav-link-color: #5BC2EE;
+    --nav-background-color: #1E0094;
+    --nav-hover-link-color: #9928C2;
+    --nav-hover-background-color: #93EE1D;
+}
+body {
+    background-color: #93EE1D;
+}
+/****************************************************************
+*
+* Default tag properties *
+*
+*****************************************************************/
+h1 {
+    font-family: Spectral, "DM Serif Display", serif;
+    grid-column: 1/13;
+    font-size: 2.5em;
+    color: #93EE1D;
+}
+h2, h3 {
+    font-family: Rubik, Mukta, Sans-serif;
+    font-weight: 700;
+    color: #5BC2EE;
+    font-size: 1.2em;
+}
+img {
+    max-width: 100%;
+}
+a {
+    text-decoration: none;
+}
+
+/****************************************************************
+* *
+* default properties for all pages *
+* *
+*****************************************************************/
+.body {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/****************************************************************
+* *
+* header area properties *
+* *
+*****************************************************************/
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+    align-items: center;
+    background-color: #5BC2EE;
+    margin: 30px;
+    font-size: 1.6em;
+    border-radius: 5px;
+}
+.logo {
+    width: 140px;
+    border-radius: 5px;
+    border: 30px;
+    border: 10px solid #5BC2EE;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+a:hover {
+    color: #9928C2;
+    background-color: #93EE1D;
+}
+/****************************************************************
+* *
+* body area properties - home page*
+* *
+*****************************************************************/
+.welcome-box, .member-box, .mission-box { 
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column: 1/13;
+    padding-top: 30px;
+    background-color: #9928C2;
+    padding-bottom: 15px;
+    border-radius: 5px;
+    padding: 15px 30px;
+    border: 30px;
+    margin: 30px; /* This produces the white space around each river's box */
+}
+.welcome-box h1 {
+    grid-column: 1/13;
+}
+.welcome-box h2 {
+    grid-column: 1/13;
+}
+.welcome-box h3 {
+    grid-column: 7/13;
+    padding-left: 10px;
+}
+.welcome-box img {
+    grid-column: 1/7;
+    width: 90%;
+    box-shadow: 5px 5px 10px #93EE1D;
+    border-radius: 5px;
+    border: 30px;
+    border: 10px solid #1E0094;
+}
+.member-buttons {
+    background-color: #1E0094;
+    color: #5BC2EE;
+    text-decoration: none;
+    font-size: 25px;
+    margin-top: 30px;
+    border-radius: 5px;
+    padding: 15px 30px;
+    text-align: center; /* Centers the text within the button box */
+    width: 20%;
+    margin: 0 auto; /* Centers the button */
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.button1 a {
+    grid-column: 1/6;
+}
+.button2 a {
+    grid-column: 7/13;
+}
+.mission-box {
+    grid-template-rows: min-content;
+}
+.mission-box h1, h2, h3 {
+    grid-column: 1/7;
+}
+.mission-box h3 {
+    margin-left: 20px;
+}
+.mission-box img {
+    box-shadow: 5px 5px 10px #93EE1D;
+    grid-column: 7/13;
+    border: 10px solid #1E0094;
+    width: 95%;
+    margin-left: 10px;
+    order: 2;
+}
+
+
+/****************************************************************
+* *
+* footer area properties *
+* *
+*****************************************************************/
+footer {
+    background-color: #5BC2EE;
+    font-size: 1rem;
+    margin: 30px;
+    align-items: center;
+    padding: 25px 50px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 5px;
+}
+
+
