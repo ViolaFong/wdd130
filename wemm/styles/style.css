@@ -28,6 +28,8 @@
 }
 body {
     background-color: #93EE1D;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 /****************************************************************
 *
@@ -36,7 +38,6 @@ body {
 *****************************************************************/
 h1 {
     font-family: Spectral, "DM Serif Display", serif;
-    grid-column: 1/13;
     font-size: 2.5em;
     color: #93EE1D;
 }
@@ -53,15 +54,6 @@ a {
     text-decoration: none;
 }
 
-/****************************************************************
-* *
-* default properties for all pages *
-* *
-*****************************************************************/
-.body {
-    max-width: 1200px;
-    margin: 0 auto;
-}
 /****************************************************************
 * *
 * header area properties *
@@ -107,6 +99,10 @@ a:hover {
     border: 30px;
     margin: 30px; /* This produces the white space around each river's box */
 }
+.welcome-box {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); 
+}
 .welcome-box h1 {
     grid-column: 1/13;
 }
@@ -115,6 +111,7 @@ a:hover {
 }
 .welcome-box h3 {
     grid-column: 7/13;
+    grid-row: 5/6;
     padding-left: 10px;
 }
 .welcome-box img {
@@ -125,38 +122,51 @@ a:hover {
     border: 30px;
     border: 10px solid #1E0094;
 }
-.member-buttons {
-    background-color: #1E0094;
-    color: #5BC2EE;
-    text-decoration: none;
-    font-size: 25px;
-    margin-top: 30px;
-    border-radius: 5px;
-    padding: 15px 30px;
-    text-align: center; /* Centers the text within the button box */
-    width: 20%;
-    margin: 0 auto; /* Centers the button */
-    column-gap: 10px;
-    row-gap: 10px;
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 1em;
+    gap: 1 em 2em;
+    display: block;
 }
-.button1 a {
+.member-box h1 {
     grid-column: 1/6;
 }
-.button2 a {
-    grid-column: 7/13;
+.button1, .button2, .button3, .button4, .button5, .button6, .button7, .button8, .button9, .button10, .button11 {
+    background-color: #1E0094;
+    color: #5BC2EE;
+    font-size: 1.5em;
+    width: 100%;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 20px;
+    margin: 0 30px;    
+}
+.column-1 {
+    grid-column: 1/5;
+}
+.column-2 {
+    grid-column: 6/-1;
 }
 .mission-box {
-    grid-template-rows: min-content;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
 }
-.mission-box h1, h2, h3 {
-    grid-column: 1/7;
+.mission-box h1 {
+    grid-column: 1/13;
+}
+.mission-box h2, h3{
+    grid-column: 1/6;
 }
 .mission-box h3 {
     margin-left: 20px;
 }
 .mission-box img {
     box-shadow: 5px 5px 10px #93EE1D;
-    grid-column: 7/13;
+    grid-column: 6/13;
+    grid-row: 3/9;
     border: 10px solid #1E0094;
     width: 95%;
     margin-left: 10px;
@@ -171,13 +181,26 @@ a:hover {
 *****************************************************************/
 footer {
     background-color: #5BC2EE;
-    font-size: 1rem;
+    font-size: 1.2em;
     margin: 30px;
     align-items: center;
     padding: 25px 50px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    border-radius: 5px;
+}
+footer p {
+    grid-column: 1/6;
+}
+footer a {
+    grid-column: 7/9;
+    grid-row: 2/4;
     display: flex;
     justify-content: space-around;
-    border-radius: 5px;
+    margin: 0 30px;
+    border-radius: 20px;
+    width: 80px;
+    padding-top: 10px;
 }
 
 
