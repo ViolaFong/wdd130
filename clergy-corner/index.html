@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clergy Corner</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+<!-- Control buttons -->
+  <div id="myBtnContainer">
+    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+    <button class="btn" onclick="filterSelection('Lutheran')"> American Lutheran Church</button>
+    <button class="btn" onclick="filterSelection('Scientist')">First Church of Christ, Scientist, Davis</button>
+    <button class="btn" onclick="filterSelection('HolyRosary')">Holy Rosary Catholic Church</button>
+    <button class="btn" onclick="filterSelection('Sikhs')">Sikhs Serving Yolo County</button>
+    <button class="btn" onclick="filterSelection('StJohns')">St. John's United Church of Christ</button>
+    <button class="btn" onclick="filterSelection('StLuke')">St. Luke's Episcopal Church</button>
+    <button class="btn" onclick="filterSelection('Christian')">The Christian Church (Disciples of Christ) of Woodland</button>
+    <button class="btn" onclick="filterSelection('LDS')">The Church of Jesus Christ of Latter-day Saints</button>
+    <button class="btn" onclick="filterSelection('Muslim')">Woodland Muslim Mosque</button>
+    <button class="btn" onclick="filterSelection('Presbyterian')">Woodland Presbyterian Church</button>
+    <button class="btn" onclick="filterSelection('Methodist')">Woodland United Methodist Church</button>
+    <button class="btn" onclick="filterSelection('Misc')">Miscellaneous</button>
+  </div>
+  
+  <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+  <div class="container">
+    <div class="filterDiv Misc">November 29, 2022: Jeanelyse Doran Adams, "Sharing and Community Create New Possibilities"</div>
+    <div class="filterDiv StJohns">November 26, 2022: Bill Schroeder, "Thoughts for the Season"</div>
+    <div class="filterDiv LDS">November 12, 2022: John Bringhurst, "Truth versus Consensus"</div>
+    <div class="filterDiv Sikhs">October 29, 2022: Sukhjit Tony Singh, "The Daily Prayer"</div>
+    <div class="filterDiv LDS">October 22, 2022: Jorge Henneke, "Hearing Through the Noise"</div>
+    <div class="filterDiv Presbyterian">October 15, 2022: Mike Umbenhauer, "Peacemaking vs. Peacekeeping</div>
+    <div class="filterDiv StLuke">October 1, 2022: Alex Leach, "A Time of Transition - A Time of Reflection"</div>
+    <div class="filterDiv Methodist">September 24, 2022: Thomas Widlund, "The True Test of Our Faith"</div>
+    <div class="filterDiv Christian">September 11, 2022: Larry Love, "The Blessing of Welcoming All"</div>
+  </div>
+  <script>
+    filterSelection("all")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("filterDiv");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+    
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+      }
+    }
+    
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);     
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+    
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+    </script>    
+</body>
+</html>
