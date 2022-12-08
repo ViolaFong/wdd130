@@ -1,0 +1,93 @@
+/******************************************************************************
+START grid layout extra credit
+******************************************************************************/
+
+* {
+    box-sizing: border-box;
+  }
+  .grid1 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding: 1rem;
+    background-color:darkgrey;
+    grid-template-areas: 
+      "grid-1 grid-2"
+      "grid-3"
+      "grid-5";
+
+  }
+  .grid1 h1 {
+    grid-area: area-1;
+    align-items: center;
+  }
+  .grid2 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 1rem;
+    background-color: aqua;
+  }
+  .grid2 h2 {
+    align-items: center;  
+    grid-column: 3/4;  
+  }
+  .grid3 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 1rem;
+    background-color:deepskyblue;
+    grid-column: 3/5;
+  } 
+  .grid3 h3 {
+    align-items: center;
+  }
+  .grid4 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 1rem;
+    background-color:greenyellow;
+  }
+  .grid4 h2 {
+    align-items: center;
+    grid-column: 2/4;
+  }
+  section {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 1rem;
+    background-color: white;
+  }
+  section h2 {
+    align-items: center;
+  }
+  form {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-gap: 0 1em;
+    background-color: bisque;
+  }
+  legend {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  fieldset > div {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 1rem;
+    background-color: white;
+  }
+  label {
+    text-align: right;
+  }
+  input {
+    text-align: left;
+    width: 100%;
+  }
+  button { 
+    background-color: blue; 
+    width: 100%;
+  }
+  section > div {  
+    background-color:bisque;
+  }
