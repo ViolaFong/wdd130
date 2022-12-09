@@ -40,11 +40,13 @@ h1 {
     font-family: Spectral, "DM Serif Display", serif;
     font-size: 2.5em;
     color: #93EE1D;
+    margin: .2em .2em .2em .2em;
 }
 h2, h3 {
     font-family: Rubik, Mukta, Sans-serif;
     color: #5BC2EE;
     font-size: 1.2em;
+    margin: .2em .2em .2em .2em;
 }
 img {
     max-width: 100%;
@@ -185,11 +187,11 @@ a:hover {
 .mission-box img {
     box-shadow: 5px 5px 10px #93EE1D;
     grid-column: 6/13;
-    grid-row: 3/9;
     border: 10px solid #1E0094;
     width: 95%;
     margin-left: 10px;
     order: 2;
+    margin-top: 20px;
 }
 /****************************************************************
 * *
@@ -250,7 +252,7 @@ a:hover {
     grid-template-columns: repeat(12, 1fr); 
 }
 .third-Thurs-box h1 {
-    grid-column: 1/8;
+    grid-column: 1/9;
 }
 .third-Thurs-box h2 {
     grid-column: 6/13; 
@@ -270,7 +272,7 @@ a:hover {
     grid-row: 2/15;
 }
 #interfaith-sock-monkies {
-    grid-column: 8/12;
+    grid-column: 9/13;
     grid-row: 1/2;
 }
 #youth-dfg {
@@ -333,7 +335,7 @@ a:hover {
 .interfaith-events-box h1 {
     grid-column: 1/6;
 }
-.interfaith-events-box h2 {
+.interfaith-events-box div {
     grid-column: 6/13;
     align-self:center;
 }
@@ -391,10 +393,11 @@ a:hover {
     grid-template-columns: repeat(12, 1fr); 
 }
 .peace-picnic-box h1 {
-    grid-column: 1/4;
+    grid-column: 1/5;
 }
 .peace-picnic_box h2 {
     grid-column: 6/13;
+    grid-row: 2/3;
 }
 .peace-picnic-box img {
     width: 95%;
