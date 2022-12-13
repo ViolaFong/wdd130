@@ -78,7 +78,7 @@ header {
     display: grid;
     grid-template-columns: 150px auto;
     align-items: center;
-    background-color: #5BC2EE;
+    background-color:#1E0094;
     margin: 30px;
     font-size: 1.6em;
     border-radius: 5px;
@@ -87,11 +87,16 @@ header {
     width: 140px;
     border-radius: 5px;
     border: 30px;
-    border: 10px solid #5BC2EE;
+    border: 10px solid;
+    border-color:#1E0094;
 }
 nav {
     display: flex;
     justify-content: space-around;
+    color:#5BC2EE;
+}
+nav a {
+    color:#5BC2EE;
 }
 a:hover {
     color: #9928C2;
@@ -481,11 +486,33 @@ a:hover {
 }
 /****************************************************************
 * *
+* feedback page properties *
+* *
+*****************************************************************/
+#feedback {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column: 1/13;
+    padding-top: 30px;
+    background-color: #9928C2;
+    padding-bottom: 15px;
+    border-radius: 5px;
+    padding: 15px 30px;
+    border: 30px;
+    margin: 30px; /* This produces the white space around each box */
+    gap: 1em 2em;    
+}
+#feedback li {
+	list-style-type: none;    
+}
+
+/****************************************************************
+* *
 * footer area properties *
 * *
 *****************************************************************/
 footer {
-    background-color: #5BC2EE;
+    background-color:#1E0094;
     font-size: 1.2em;
     font-weight: 700;
     margin: 30px;
@@ -497,7 +524,7 @@ footer {
 }
 footer p {
     grid-column: 1/8;
-    color:black;
+    color:#5BC2EE;
 }
 footer a {
     grid-column: 9/12;
@@ -509,6 +536,7 @@ footer a {
     width: 80%;
     padding-top: 10px;
     gap: 1em 2em;
+    color:#5BC2EE
 }
 
 
