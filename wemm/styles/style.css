@@ -27,7 +27,7 @@
     --nav-hover-background-color: #93EE1D;
 }
 body {
-    background-color: #93EE1D;
+    background-color: #2C940C;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -481,8 +481,8 @@ a:hover {
     font-size: 1.2em;
 }
 .clergy-corner-box a:hover {
-    color: #9928C2;
-    background-color: #93EE1D;
+    color: #3C096C;
+    background-color: #2C940CE;
 }
 /****************************************************************
 * *
